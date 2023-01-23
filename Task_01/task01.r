@@ -232,3 +232,4 @@ head(Data1)
 beren2 <- Data1
 beren3 <- beren2[order(beren2$age),]
 write.csv(beren3, 'beren_new.csv', quote=F, row.names=FALSE)
+Feeds <- which(beren3$event == 'bottle')
