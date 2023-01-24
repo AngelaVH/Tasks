@@ -77,3 +77,14 @@ plot(density(ManySiblings), main="", xlab="proportion shared genes")
 sum(ToMomMom, ToMomDad)
 pdf("003_relatePlot.pdf", height = 4, width = 4)
 dev.off()
+pdf("r02b0totMassByDay.pdf", height=4, width=4)
+par(las=1, mar=c(5,5,1,1),mgp=c(2, 0.5, 0), tck=-0.01)
+
+plot(as.numeric(names(totalMass)),totalMass,type="b",pch=16, xlab="age in day",ylab="mass in kg")
+
+title("Beren Age vs Mass",xlab="age in day", ylab="mass in kg")
+
+
+
+
+
