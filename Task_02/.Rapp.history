@@ -1,84 +1,3 @@
-z <- c(1.1, 9, 3.14)
-?c
-z
-c(z, 55, z)
-c(z, 555, z)
-z * 2 + 100
-my_sqrt <- sqrt(z-1)
-c(3)
-my_sqrt
-my_div <- z/my_sqrt
-my_div
-c(1, 2, 3, ,4)+c(0, 10)
-c(1, 2, 3, 4)+c(0, 10)
-c(1, 2, 3, 4)+c(0, 10, 100)
-z * 2 + 1000
-library(swirl)
-swirl()
-getwd()
-ls()
-x <- 9
-ls()
-dir()
-?list.files
-args(list.files)
-old.dir <- getwd()
-dir.create("testdir")
-skip()
-file.create("mytest.R")
-dir()
-file.exists("mytest.R")
-file.info("mytest.R")
-?file.rename
-file.rename("mytest.R", "mytest.R")
-file.rename("mytest.R", "mytest2.R")
-file.copy("mytest.R", "my.test3.R")
-file.copy("mytest2.R", "mytest3.R")
-file.path("mytest3.R")
-skip()
-?dir.create
-skip()
-setwd(old.dir)
-library(swirl)
-swirl()
-1.20
-1:20
-pi:10
-15:1
-?':'
-seq(1,20)
-?seq
-seq(0, 10, by=0.5)
-my_seq <- seq(5, 10, length=30)
-length(my_seq)
-1:length(my_seq)
-seq(along.with = my_seq)
-seq_along(my_seq)
-rep(0, times = 40)
-rep(c(0, 1, 2), times = 10)
-rep(c(0, 1, 2), each = 10)
-num_vect <- c(0.5, 55, -10, 6)
-tf <- num_vect < 1
-tf
-num_vect >= 6
-my_char <- c("My", "name", "is")
-my_char
-library(swirl)
-swirl()
-my_name <- c(my_char, "Angela Van Horn")
-my_name
-paste(my_name, collapse = " ")
-paste("Hello", "world!", sep = " ")
-> paste(1:3, c("x", "y", "z"), sep = " ")
-paste(1:3, c("x", "y", "z"), sep = " ")
-paste(1:3, c("X", "Y", "Z"), sep = " ")
-paste(1:3, c("X", "Y", "Z"), sep = "")
-LETTERS
-paste(LETTERS, 1:4, sep = "-")
-library(swirl)
-swirl()
-x <- c(44, NA,5, NA)
-x * 3
 y <- rnorm(1000)
 z <- rep(NA, 1000)
 my_data <- sample(c(y, z), 100)
@@ -242,13 +161,10 @@ dateID <- sapply(dayID , as.Date, format = "%Y-%n-%d", orgin =#
 	"2019-04-18")
 dateID <- sapply( dayID , as.Date, format = "%Y-%n-%d", orgin =#
 	"2019-04-18")
-dateID <- sapply( dayID , as.Date, format = "%Y-%n-%d", orgin =#
-	"2019-04-18")
 dateID <- sapply('dayID' , as.Date, format = "%Y-%n-%d", orgin =#
 	"2019-04-18")
 Data1$age <- dataID - dataID[which(Data1$event == 'birth')]
 Data1$age <- 'dataID' - dataID[which(Data1$event == 'birth')]
-Data1$age <- 'dataID' - 'dataID'[which(Data1$event == 'birth')]
 Data1$age <- 'dataID' - 'dataID'[which(Data1$event == 'birth')]
 Data1$age <- "dataID" - "dataID"[which(Data1$event == "birth")]
 Data1$age <- "dataID" -- "dataID"[which(Data1$event == "birth")]
@@ -258,3 +174,188 @@ head(Data1)
 beren2 <- Data1
 beren3 <- beren2[order(beren2$age),]
 write.csv(beren3, 'beren_new.csv', quote=F, row.names=FALSE)
+Feeds < which(beren3$event =="bottle")
+setwd('/Users/angelavanhorn/Desktop/Evolution/Tasks/Task_02')#
+Data1 <- read.csv('http://jonsmitchell.com/data/beren.csv',#
+	stringsAsFactors=F)#
+Data2 <- read.csv('http://jonsmitchell.com/data/cyrus.csv',#
+	stringsAsFactors=F)#
+write.csv(Data1, 'rawdata.csv', quote=F)#
+length(Data1)#
+nrow(Data1)#
+ncol(Data1)#
+colnames(Data1)#
+head(Data1)#
+Data1 [1,]#
+Data1 [2,]#
+Data1 [1:3,]#
+Data1 [1:3, 4]#
+Data1 [1:5, 1:3]#
+Feeds <- which(Data1 [.9] == 'bottle')#
+berenMilk <- Data1 [Feeds,]#
+head(berenMilk)#
+Feeds <- which(Data1 [,'event'] =='bottle')#
+Feeds <- which(Data1$event =='bottle')#
+dayID <- apply(Data1, 1, function(x) paste(x[1:3], collapse='-'))#
+dateID <- sapply('dayID' , as.Date, format = "%Y-%n-%d", orgin =#
+	"2019-04-18")#
+Data1$age <- 'dataID - dataID'[which(Data1$event == 'birth')]#
+head(Data1)	#
+beren2 <- Data1#
+beren3 <- beren2[order(beren2$age),]#
+write.csv(beren3, 'beren_new.csv', quote=F, row.names=FALSE)#
+Feeds <- which(beren3$event == "bottle")
+avgMilk <- mean(beren3$value[Feeds])
+avgFeed <- tapply(beren3$value[Feeds], beren3$age[Feeds], mean)
+varFeed <- tapply(beren3$value[Feeds], beren3$[Feeds], var)
+varFeed <- tapply(beren3$value[Feeds], beren3$age[Feeds], var)
+totalFeed <- tapply(beren3$value[Feeds], beren3$age[Feeds, sum])
+totalFeed <- tapply(beren3$value[Feeds], beren3$age[Feeds], sum)
+numFeeds <- tapply(beren3$value[Feeds], beren3$age[Feeds], length)
+cor(beren3$value[Feeds], beren3$age[Feeds])
+cor.test(beren3$value[Feeds], beren3$age[Feeds])
+summary(berenCor)
+berenCor <- cor.test(beren3$value[Feeds], beren3$age[Feeds])
+Feeds[1:6]
+beren3$value[1:6]
+beren3$age[1:6]
+berenANOVA <- aov(beren3$value[Feeds] ~ beren3$caregiver[Feeds])
+boxplot(beren3$value[Feeds] ~ beren3$caregiver[Feeds], xlab= "who gave the bottle", ylab= "amount of milk consumed (oz)")
+?par
+par(las=1, mar=c(5,5,1,1), mgp=c(2,0.5,0)tck=-0.01)
+par(1as=1, mar=c(5,5,1,1), mgp=c(2,0.5,0)tck=-0.01)
+par(las=1, mar=c(5,5,1,1), mgp=c(2,0.5,0), tck=-0.01)
+plot(as.numeric(names(totalFeed)), totalFeed, type"b", pch=16, xlab="age in days", ylab="ounces of milk")
+plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days", ylab="ounces of milk")
+plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days", ylab= "ounces of milk")
+abline(h=mean(totalFeed), 1ty=2, col='red')
+abline(h=mean(totalFeed), lty=2, col='red')
+pdf(''r02b-totalMilkByDay.pdf'', height = 4, width = 4)
+pdf("r02b-totalMilkByDay.pdf", height = 4, width = 4)
+par(las=1, mar=c(5,5,1,1), mgp=(2,0.5,0), tck=-0.01)
+par(1as=1, mar=c(5,5,1,1), mgp=(2,0.5,0), tck=-0.01)
+par(las=1, mar=c(5,5,1,1), mgp=(2,0.5,0), tck=-0.01)
+par(las=1, mar=c(5,5,1,1), mgp=(2, 0.5, 0), tck=-0.01)
+par(las=1, mar=c(5,5,1,1), mgp=c(2, 0.5, 0), tck=-0.01)
+plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days", ylab="ounces of milk")
+par(las=1, mar=c(5,5,1,1), mgp=c(2, 0.5, 0), tck=-0.01)
+par(las=1, mar=c(5,5,1,1), mgp=c(2, 0.5, 0), tck=-0.01)#
+plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days", ylab="ounces of milk")#
+dev.off()
+pdf(''r02b-totalMilkByDay.pdf'', height = 4, width=4)#
+par(las=1, mar=c(5,5,1,1), mgp=c(2, 0.5, 0), tck=-0.01)#
+plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab=#
+	"age in days", ylab="ounces of milk")#
+abline(h=mean(totalFeed), 1ty=2, col='red')#
+dev.off()
+pdf(''r02b-totalMilkByDay.pdf'', height=4, width=4)#
+par(las=1, mar=c(5,5,1,1), mgp=c(2, 0.5, 0), tck=-0.01)#
+plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, #
+xlab="age in days", ylab="ounces of milk")#
+abline(h=mean(totalFeed), 1ty=2, col='red')#
+dev.off()
+pdf('r02b-totalMilkByDay.pdf, height=4, width=4)#
+par(las=1, mar=c(5,5,1,1), mgp=c(2, 0.5, 0), tck=-0.01)#
+plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, #
+xlab="age in days", ylab="ounces of milk")#
+abline(h=mean(totalFeed), 1ty=2, col='red')#
+dev.off()
+pdf('r02b-totalMilkByDay.pdf, height=4, width=4)#
+par(las=1, mar=c(5,5,1,1), mgp=c(2, 0.5, 0), tck=-0.01)#
+plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, #
+xlab="age in days", ylab="ounces of milk")#
+abline(h=mean(totalFeed), 1ty=2, col='red')
+xlab='age in days', ylab='ounces of milk')#
+abline(h=mean(totalFeed), 1ty=2, col='red')
+xlab="age in days", ylab="ounces of milk")
+pdf('r02b-totalMilkByDay.pdf, height=4, width=4)#
+par(las=1, mar=c(5,5,1,1), mgp=c(2, 0.5, 0), tck=-0.01)
+plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, #
+xlab="age in days", ylab="ounces of milk")#
+abline(h=mean(totalFeed), 1ty=2, col='red')
+plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, #
+("xlab="age in days", ylab="ounces of milk")#
+abline(h=mean(totalFeed), 1ty=2, col='red')
+plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, #
+"xlab="age in days", ylab="ounces of milk")#
+abline(h=mean(totalFeed), 1ty=2, col='red')
+plot(as.numeric(names(totalFeed)),totalFeed,type="b", pch=16, #
+"xlab="age in days", ylab="ounces of milk")#
+abline(h=mean(totalFeed), 1ty=2, col='red')
+plot(as.numeric(names(totalFeed)),totalFeed,type="b", pch=16, xlab="age in days", ylab="ounces of milk")
+plot(as.numeric(names(totalFeed)),totalFeed, type="b", pch=16, xlab="age in days",ylab="ounces of milk")
+plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days",ylab="ounces of milk")#
+abline(h=mean(totalFeed), 1ty=2, col='red')
+plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days",ylab="ounces of milk")#
+abline(h=mean(totalFeed), 1ty=2, col="re
+plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days",ylab="ounces of milk")#
+abline(h=mean(totalFeed), 1ty=2, col="red")
+pdf('r02b-totalMilkByDay.pdf, height=4, width=4)#
+par(las=1, mar=c(5,5,1,1), mgp=c(2, 0.5, 0), tck=-0.01)#
+plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days",ylab="ounces of milk")#
+abline(h=mean(totalFeed), 1ty=2, col="red")
+dev.off()
+pdf('r02b-totalMilkByDay.pdf, height=4, width=4)#
+par(las=1, mar=c(5,5,1,1), mgp=c(2, 0.5, 0), tck=-0.01)#
+plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days",ylab="ounces of milk")#
+abline(h=mean(totalFeed), 1ty=2, col="red")#
+dev.off()
+source("https://jonsmitchell.com/code/plotFxn02bR")
+source("https://jonsmitchell.com/code/plotFxn02b.R")
+source("https://jonsmitchell.com/code/plotFxn02b.R")#
+Mass <-which(Data1[,9]=='trait_mass')
+source("https://jonsmitchell.com/code/plotFxn02b.R")#
+Mass <- which(Data1[,9]=='trait_mass')
+source("https://jonsmitchell.com/code/plotFxn02b.R")
+source("https://jonsmitchell.com/code/plotFxn02b.R")#
+Mass <- which(Data1[,9]=='trait_mass')#
+berenMass <- Data1[Mass,]
+source("https://jonsmitchell.com/code/plotFxn02b.R")#
+Mass <- which(Data1[,9]=='trait_mass')#
+berenMass <- Data1[Mass,]#
+head(berenMass)
+source('https://jonsmitchell.com/code/plotFxn02b.R')#
+Mass <- which(Data1[,9]=='trait_mass')#
+berenMass <- Data1[Mass,]#
+head(berenMass)
+source('https://jonsmitchell.com/code/plotFxn02b.R')
+source('https://jonsmitchell.com/code/plotFxn02b.R')#
+Mass <- which(Data1[,9]=='trait_mass')#
+berenMass <- Data1[Mass,]#
+head(berenMass)
+source("http://jonsmitchell.com/code/simFxn04.R")
+MatGrandpa <- makeFounder("grandma_mom")#
+MatGrandpa <- makeFounder("grandpa_mom")#
+PatGrandpa <- makeFounder("grandma_da")
+Alan <- makeBaby(PatGrandma, PatGrandpa)
+MatGrandpa <- makeFounder("grandma_mom")#
+MatGrandpa <- makeFounder("grandpa_mom")#
+PatGrandpa <- makeFounder("grandma_da")#
+Alan <- makeBaby(PatGrandma, PatGrandpa)
+MatGrandpa <- makeFounder("grandma_mom")#
+MatGrandpa <- makeFounder("grandpa_mom")#
+PatGrandma <- makeFounder("grandma_da")#
+Alan <- makeBaby(PatGrandma, PatGrandpa)#
+Brenda <- makeBaby(PatGrandma, PatGrandpa)#
+Focus <- makeBaby(Brenda, Alan)
+ToMom <-length(grep("grandma_mom", Focus))//length(Focus)#
+toMomMom <- length(grep("grandma_mom",Focus))/length(Focus)#
+ToMomDad <- length(grep("grandpa_mom", Focus))/length(Focus)
+ToMom <-length(grep("mom", Focus))//length(Focus)#
+toMomMom <- length(grep("grandma_mom",Focus))/length(Focus)#
+ToMomDad <- length(grep("grandpa_mom", Focus))/length(Focus)
+ToMom <- length(grep("mom", Focus))//length(Focus)#
+toMomMom <- length(grep("grandma_mom",Focus))/length(Focus)#
+ToMomDad <- length(grep("grandpa_mom", Focus))/length(Focus)
+ToMom <- length(grep("mom", Focus))/length(Focus)#
+toMomMom <- length(grep("grandma_mom",Focus))/length(Focus)#
+ToMomDad <- length(grep("grandpa_mom", Focus))/length(Focus)
+Sibling_01 <- makeBaby(Brenda, Alan)#
+ToSib <- length(intersect(Focus, Sibling_01))/length(Focus)#
+ManySiblings <- replicate(1e3, length(intersect(Focus, makeBaby(Brenda, Alan)))/length(Focus))#
+quantile(ManySiblings)
+mean(ManySiblings)
+plot(density(ManySiblings), main="", xlab="proportion shared genes")
+sum(ToMomMom, ToMomDad)
+pdf("003_relatePlot.pdf", height = 4, width = 4)
+dev.off()
