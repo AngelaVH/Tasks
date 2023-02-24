@@ -1,0 +1,175 @@
+library(adegenet)#
+library(poppr)#
+library(dplyr)#
+library(heirfstat)#
+library(reshape2)#
+library(ggplot2)#
+libary(RColorBrewer)#
+library(scales)
+coalescent.plot()
+install.packages("adegenet")
+library(poppr)
+install.packages("poppr")
+library(dplyr)
+install.packages("heirfstat")
+install.packages("reshape2")
+install.packages("scales")
+install.packages("RColorBrewer")
+install.packages("ggplot2")
+install.packages("reshape2")
+install.packages("heirfstat")
+install.packages("dplyr")
+install.packages("poppr")
+install.packages("dplyr")
+lobster <- read.cvs("https://jonsmitchell.com/data/lobster_genotype.csv")
+lobster<-read.cvs("https://jonsmitchell.com/data/lobster_genotype.csv")
+lobster <- read.cvs("https://jonsmitchell.com/data/lobster_genotype.csv")
+lobster <- read.cvs("https://jonsmitchell.com/data/lobster_genotype.#
+	csv")
+lobster <- read.cvs("https://jonsmitchell.com/data/lobster_genotype \n\tcsv")
+lobster <- read.cvs("https://jonsmitchell.com/data/lobster_genotype 	\	n\tcsv")
+lobster <- read.cvs("https://jonsmitchell.com/data/lobster_genotype 	#
+	\n\tcsv")
+lobster <- read.cvs("https://jonsmitchell.com/data/lobster_genotype
+lobster_wide<- reshape(lobster, idvar =c("ID","Site"), timevar="#
+	Locus", direction="wide", sep="")
+lobster <- read.cvs("https://jonsmitchell.com/data/lobster_genotype 	#
+#
+lobster_wide<- reshape(lobster, idvar =c("ID","Site"), timevar="#
+	Locus", direction="wide", sep="")
+lobster_wide <- reshape(lobster, idvar =c("ID","Site"), timevar="#
+	Locus", direction="wide", sep="")
+lobster <- read.cvs("https://jonsmitchell.com/data/lobster_genotype.#
+	csv")
+lobster <- read . cvs("https://jonsmitchell.com/data/lobster_genotype.#
+	csv")
+lobster <- read.csv("https://jonsmitchell.com/data/lobster_genotype.#
+	csv")
+lobster <- read.csv("https://jonsmitchell.com/data/lobster_genotypes.#
+	csv")
+lobster <- read.csv("https://jonsmitchell.com/data/lobster_genotypes.csv")
+lobster<-read.csv("https://jonsmitchell.com/data/lobster_genotypes.csv")
+lobster_wide <- reshape(lobster, idvar =c("ID","Site"), timevar="#
+	Locus", direction="wide", sep="")
+lobster_wide <- reshape(lobster, idvar =c("ID","Site"), timevar= "#
+	Locus", direction="wide", sep="")
+lobster_wide <- reshape(lobster, idvar =c("ID","Site"), timevar= "#
+	Locus", direction= "wide", sep = "")
+lobster_wide <- reshape(lobster, idvar =c("ID","Site"), timevar= "#
+	Locus", direction = "wide", sep = "")
+lobster_wide <- reshape(lobster, idvar =c("ID","Site"), timevar= "#
+	Locus", direction = "wide", sep = "")#
+colnames(lobster_wid) <- gsub("Genotype", "", colnames(lobster_wide ))#
+snpgeno <- lobster_wide[ , 3:ncol(lobster_wide)]
+lobster_wide <- reshape(lobster, idvar =c("ID","Site"), timevar= "#
+	Locus", direction = "wide", sep = "")
+lobster_wide <- reshape(lobster, idvar =c("ID","Site"), timevar="#
+	Locus", direction = "wide", sep = "")
+lobster<-read.csv("https://jonsmitchell.com/data/lobster_genotypes.csv")	#
+lobster_wide <- reshape(lobster, idvar =c("ID","Site"), timevar="#
+	Locus", direction = "wide", sep = "")
+lobster<-read.csv("https://jonsmitchell.com/data/lobster_genotypes.csv")	#
+lobster_wide <- reshape(lobster, idvar =c("ID","Site"), timevar="#
+	Locus", direction = "wide", sep = "")#
+colnames(lobster_wid) <- gsub("Genotype", "", colnames(lobster_wide ))#
+snpgeno <- lobster_wide[ , 3:ncol(lobster_wide)]
+lobster_wide <- reshape(lobster, idvar =c("ID","Site"), timevar="#
+	Locus", direction = "wide", sep = "")
+lobster_wide <- reshape(lobster, idvar =c("ID","Site"), timevar="#
+	Locus", direction = "wide" , sep ="")
+lobster_wide <- reshape(lobster, idvar =c("ID","Site"), timevar= "#
+	Locus", direction = "wide" , sep ="")
+obster_wide <- reshape(lobster, idvar =c("ID","Site"), timevar= "#
+	Locus", direction = "wide" , sep ="")
+lobster_wide <- reshape(lobster, idvar =c("ID","Site"), timevar= "#
+	Locus", direction = "wide" , sep ="")
+lobster<-read.csv("https://jonsmitchell.com/data/lobster_genotypes.csv")#
+lobster_wide <- reshape(lobster, idvar =c("ID","Site"), timevar= "#
+	Locus", direction = "wide" , sep ="")
+install.packages("adegenet")#
+install.packages("poppr")#
+install.packages("dplyr")#
+install.packages("heirfstat")#
+install.packages("dreshape2")#
+install.packages("ggplot2")#
+install.packages("RColorBrewer")#
+install.packages("scales")
+lobster<-read.csv("https://jonsmitchell.com/data/lobster_genotypes.csv")
+lobster_wide <- reshape(lobster, idvar =c("ID","Site"), timevar= "#
+	Locus", direction = "wide" , sep ="")
+colnames(lobster_wid) <- gsub("Genotype", "", colnames(lobster_wide ))#
+snpgeno <- lobster_wide[ , 3:ncol(lobster_wide)]
+snps_to_remove <- c("25580","32362","41521","53889","65376","8953","21197","15531","22740","28357","33066","51507","53052","53263","21880","22323","22365")#
+snpgeno <- snpgeno[ , !colnames(snpgeno) %in% snps_to_remove]
+ind <- as.character(lobster_wide$ID)
+site <- as.character(lobster_wide$Site)
+lobster_gen <- missingno(lobster_gen, type="geno", cutoff=0.20)
+lobster_wide <- reshape(lobster, idvar =c("ID","Site"), timevar= "Locus", direction = "wide" , sep ="")
+colnames(lobster_wid) <- gsub("Genotype", "", colnames(lobster_wide ))#
+snpgeno <- lobster_wide[ , 3:ncol(lobster_wide)]
+snps_to_remove <-c("25580","32362","41521","53889","65376","8953","21197","15531","22740","28357","33066","51507","53052","53263","21880","22323","22365")#
+snpgeno <- snpgeno[ , !colnames(snpgeno) %in% snps_to_remove]
+ind <- as.character(lobster_wide$ID)
+site <- as.character(lobster_wide$Site)
+lobster_gen <- missingno(lobster_gen, type="geno", cutoff=0.20)
+lobster_gen <- df2genind(snpgeno, ploidy=2, ind.names=ind, pop=site, sep="")
+lobster_gen <- df2genind(snpgeno, ploidy=2, ind.names=ind.names=ind, pop=site, sep="")
+lobster<-read.csv("https://jonsmitchell.com/data/lobster_genotypes.csv")#
+lobster_wide <- reshape(lobster, idvar =c("ID","Site"), timevar= "Locus", direction = "wide" , sep ="")#
+colnames(lobster_wid) <- gsub("Genotype", "", colnames(lobster_wide ))#
+snpgeno <- lobster_wide[ , 3:ncol(lobster_wide)]#
+snps_to_remove <-c("25580","32362","41521","53889","65376","8953","21197","15531","22740","28357","33066","51507","53052","53263","21880","22323","22365")#
+snpgeno <- snpgeno[ , !colnames(snpgeno) %in% snps_to_remove]#
+ind <- as.character(lobster_wide$ID)#
+site <- as.character(lobster_wide$Site)
+lobster_wide <- reshape(lobster, idvar =c("ID","Site"), timevar= "Locus", direction = "wide" , sep ="")#
+colnames(lobster_wid) <- gsub("Genotype", "", colnames(lobster_wide ))#
+snpgeno <- lobster_wide[ , 3:ncol(lobster_wide)]#
+snps_to_remove <-c("25580","32362","41521","53889","65376","8953","21197","15531","22740","28357","33066","51507","53052","53263","21880","22323","22365")#
+snpgeno <- snpgeno[ , !colnames(snpgeno) %in% snps_to_remove]#
+ind <- as.character(lobster_wide$ID)#
+site <- as.character(lobster_wide$Site)
+colnames(lobster_wid) <- gsub("Genotype", "", colnames(lobster_wide ))
+lobster<-read.csv("https://jonsmitchell.com/data/lobster_genotypes.csv")#
+lobster_wide <- reshape(lobster, idvar =c("ID","Site"), timevar= "Locus", direction = "wide" , sep ="")#
+colnames(lobster_wide) <- gsub("Genotype", "", colnames(lobster_wide ))#
+snpgeno <- lobster_wide[ , 3:ncol(lobster_wide)]#
+snps_to_remove <-c("25580","32362","41521","53889","65376","8953","21197","15531","22740","28357","33066","51507","53052","53263","21880","22323","22365")#
+snpgeno <- snpgeno[ , !colnames(snpgeno) %in% snps_to_remove]#
+ind <- as.character(lobster_wide$ID)#
+site <- as.character(lobster_wide$Site)
+lobster_gen <- df2genind(snpgeno, ploidy=2,
+lobster_gen <- df2genind(snpgeno, ploidy=2, ind.names=ind.names=ind, pop=site, sep="")
+lobster_gen <- df2genind(snpgeno, ploidy=2, ind.names=ind, pop=site, sep="")
+lobster_gen <- df2genind(snpgeno, ploidy=2, ind.names=ind, pop=#
+	site, sep="")
+lobster_gen <- df2genind(snpgeno, ploidy=2, ind.names=ind, pop=#
+	site, sep="")
+lobster_gen <- df2genind(snpgeno, ploidy=2, ind.names=ind, pop=#
+	site, sep="")
+ind <- as.character(lobster_wide$ID)#
+site <- as.character(lobster_wide$Site)#
+lobster_gen <- df2genind(snpgeno, ploidy=2, ind.names=ind, pop=#
+	site, sep="")
+lobster_gen <- df2genind(snpgeno, ploidy=2, ind.names=ind , pop=#
+	site, sep="")
+lobster_gen <- df2genind(snpgeno, ploidy=2, ind.names=ind , pop=site, sep="")
+lobster_gen <- missingno(lobster_gen, type="geno", cutoff=0.20)
+lobster_gen <- df2genind(snpgeno, ploidy=2, ind.names=ind , pop=site, sep="")
+lobster_gen <- df2genind(snpgeno, ploidy=2, ind.names=ind , pop=site, sep="")
+lobster_gen <- df2genind(snpgeno, ploidy=2, ind.names=ind , pop=site, sep="")
+lobster_gen <- df2genind(snpgeno, ploidy=2, ind.names=ind , pop=site, sep='')
+lobster_gen <- df2genind (snpgeno, ploidy=2, ind.names=ind , pop=site, sep="")
+lobster_gen<-df2genind (snpgeno, ploidy=2, ind.names=ind , pop=site, sep="")
+lobster<-read.csv("https://jonsmitchell.com/data/lobster_genotypes.csv")#
+lobster_wide <- reshape(lobster, idvar =c("ID","Site"), timevar= "Locus", direction = "wide" , sep ="")#
+colnames(lobster_wide) <- gsub("Genotype", "", colnames(lobster_wide ))#
+snpgeno <- lobster_wide[ , 3:ncol(lobster_wide)]#
+snps_to_remove <-c("25580","32362","41521","53889","65376","8953","21197","15531","22740","28357","33066","51507","53052","53263","21880","22323","22365")#
+snpgeno <- snpgeno[ , !colnames(snpgeno) %in% snps_to_remove]#
+ind <- as.character(lobster_wide$ID)#
+site <- as.character(lobster_wide$Site)#
+lobster_gen <- df2genind (snpgeno, ploidy=2, ind.names=ind , pop=site, sep="")#
+lobster_gen <- missingno(lobster_gen, type="geno", cutoff=0.20)#
+mlg(lobster_gen)#
+dup_lobster <- mlg.id(lobster_gen)
