@@ -20,13 +20,13 @@ lobster<-read.csv("https://jonsmitchell.com/data/lobster_genotypes.csv")
 lobster_wide <- reshape(lobster, idvar =c("ID","Site"), timevar= "Locus", direction = "wide" , sep ="")
 colnames(lobster_wide) <- gsub("Genotype", "", colnames(lobster_wide ))
 snpgeno <- lobster_wide[ , 3:ncol(lobster_wide)]
-snps_to_remove <-c("25580","32362","41521","53889","65376","8953","21197","15531","22740","28357","33066","51507","53052","53263","21880","22323","22365")
+snps_to_remove <- c("25580","32362","41521","53889","65376","8953","21197","15531","22740","28357","33066","51507","53052","53263","21880","22323","22365")
 snpgeno <- snpgeno[ , !colnames(snpgeno) %in% snps_to_remove]
 ind <- as.character(lobster_wide$ID)
 site <- as.character(lobster_wide$Site)
 
-lobster_gen <- df2genind (snpgeno, ploidy=2, ind.names=ind , pop=site, sep="")
-lobster_gen <- missingno(lobster_gen, type="geno", cutoff=0.20)
+lobster_gen <= df2genind (snpgeno, ploidy=2, ind.names = ind, pop = site, sep="")
+lobster_gen <= missingno(lobster_gen, type="geno", cutoff=0.20)
 mlg(lobster_gen)
 dup_lobster <- mlg.id(lobster_gen)
 lob_dups <- c()
