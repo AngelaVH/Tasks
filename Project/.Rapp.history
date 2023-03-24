@@ -1,0 +1,53 @@
+getwd()
+data<-read.csv("/Users/angelavanhorn/Desktop/Evolution/Tasks/Project/Emergence-1.csv")
+data2<-read.csv("/Users/angelavanhorn/Desktop/Evolution/Tasks/Project/LifespanDevelopment-1.csv")
+data1<-read.csv("/Users/angelavanhorn/Desktop/Evolution/Tasks/Project/Emergence-1.csv")
+data2<-read.csv("/Users/angelavanhorn/Desktop/Evolution/Tasks/Project/LifespanDevelopment-1.csv")
+shortlife<-("/Users/angelavanhorn/Desktop/Evolution/Tasks/Project/ShortLife.csv")
+longlife<-("/Users/angelavanhorn/Desktop/Evolution/Tasks/Project/LongLife.csv")
+pdf("ShortLifeLifespanandDevelopment.pdf")#
+plot(shortlife$Development time, shortlife$, xlab="Development Time", ylab="Lifespan")#
+title('Development vs. Lifespan (Shortlife)')
+pdf("ShortLifeLifespanandDevelopment.pdf")#
+plot(shortlife$Developmenttime, shortlife$, xlab="Development Time", ylab="Lifespan")#
+title('Development vs. Lifespan (Shortlife)')
+plot(shortlife$)
+plot(shortlife$Developmenttime, shortlife$, xlab="Development Time", ylab="Lifespan")
+cor.test(shortlife$Development, shortlife$Lifespan, method=c("pearson", "kendall", "spearman"))
+cor.test(shortlife$Developmenttime, shortlife$Lifespan, method=c("pearson", "kendall", "spearman"))
+pdf("ShortLifeLifespanandDevelopment.pdf")#
+plot(shortlife$Developmenttime, shortlife$, xlab="Development Time", ylab="Lifespan")#
+title('Development vs. Lifespan (Shortlife)')
+data1<-read.csv("/Users/angelavanhorn/Desktop/Evolution/Tasks/Project/Emergence-1.csv")#
+data2<-read.csv("/Users/angelavanhorn/Desktop/Evolution/Tasks/Project/LifespanDevelopment-1.csv")
+shortlife<-("/Users/angelavanhorn/Desktop/Evolution/Tasks/Project/ShortLife.csv")#
+longlife<-("/Users/angelavanhorn/Desktop/Evolution/Tasks/Project/LongLife.csv")
+hortlife<-("/Users/angelavanhorn/Desktop/Evolution/Tasks/Project/ShortLife.csv")#
+longlife<-("/Users/angelavanhorn/Desktop/Evolution/Tasks/Project/LongLife.csv")
+shortlife<-("/Users/angelavanhorn/Desktop/Evolution/Tasks/Project/ShortLife.csv")#
+longlife<-("/Users/angelavanhorn/Desktop/Evolution/Tasks/Project/LongLife.csv")
+pdf("ShortLifeLifespanandDevelopment.pdf")#
+plot(shortlife$Development, shortlife$, xlab="Development Time", ylab="Lifespan")#
+title('Development vs. Lifespan (Shortlife)')#
+dev.off()#
+cor.test(shortlife$Development, shortlife$Lifespan, method=c("pearson", "kendall", "spearman"))
+pdf("ShortLifeLifespanandDevelopment.pdf")#
+plot(shortlife$Development, shortlife$Lifespan, xlab="Development Time", ylab="Lifespan")#
+title('Development vs. Lifespan (Shortlife)')#
+dev.off()#
+cor.test(shortlife$Development, shortlife$Lifespan, method=c("pearson", "kendall", "spearman"))
+pdf("ShortLifeLifespanandDevelopment.pdf")#
+plot(shortlife[[Development]], shortlife[[Lifespan]], xlab="Development Time", ylab="Lifespan")#
+title('Development vs. Lifespan (Shortlife)')#
+dev.off()#
+cor.test(shortlife[[Development]], shortlife[[Lifespan]], method=c("pearson", "kendall", "spearman"))
+shortlife<-("/Users/angelavanhorn/Desktop/Evolution/Tasks/Project/ShortLife.csv")#
+longlife<-("/Users/angelavanhorn/Desktop/Evolution/Tasks/Project/LongLife.csv")
+pdf("ShortLifeLifespanandDevelopment.pdf")#
+plot(shortlife[[Development]], shortlife[[Lifespan]], xlab="Development Time", ylab="Lifespan")#
+title('Development vs. Lifespan (Shortlife)')#
+dev.off()
+shortlife()
+shortlife
+View(shortlife)
+data(shortlife)

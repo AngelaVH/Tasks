@@ -212,7 +212,6 @@ ind <- as.character(lobster_wide$ID)#
 site <- as.character(lobster_wide$Site)
 lobster gen <= df2genind(snpgeno, ploidy = 2, ind.names = ind, pop = site , sep = ””)
 lobster_gen <= df2genind (snpgeno, ploidy=2, ind.names = ind, pop = site, sep="")
-lobster_gen <= df2genind (snpgeno, ploidy=2, ind.names = ind, pop = site, sep="")
 lobstergen <= df2genind (snpgeno, ploidy=2, ind.names = ind, pop = site, sep="")
 lobster-gen <= df2genind (snpgeno, ploidy=2, ind.names = ind, pop = site, sep="")
 lobster<-read.csv("https://jonsmitchell.com/data/lobster_genotypes.csv")#

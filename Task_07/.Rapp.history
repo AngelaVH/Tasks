@@ -1,0 +1,74 @@
+text.string<-#
+	"(((((((cow, pig) ,whale),(bat,(lemur, human))),(robin,iguana)),coelacanth#
+	),(gold_fish, trout)),shark);"#
+vert.tree<-read.tree(text=text.string)#
+plot(vert.tree, edge.width=2)
+text.string<-#
+	"(((((((cow, pig) ,whale),(bat,(lemur, human))),(robin,iguana)),coelacanth#
+	),(gold_fish, trout)),shark);"
+vert.tree<-read.tree(text=text.string)
+vert . tree<-read.tree(text=text.string)
+v e r t . t r e e <= r e a d . t r e e ( t e x t = t e x t . s t r i n g )
+vert.tree<-read.tree(text=text.string)
+vert.tree<=read.tree(text=text.string)
+vert.tree<-read.tree(text=text.string)
+text.string<-#
+	"(((((((cow, pig) ,whale),(bat,(lemur, human))),(robin,iguana)),coelacanth#
+	),(gold_fish, trout)),shark);"#
+vert.tree<-read.tree(text=text.string)
+plot(vert.tree, edge.width=2)
+text.string<-#
+	"(((((((cow, pig) ,whale),(bat,(lemur, human))),(robin,iguana)),coelacanth#
+	),(gold_fish, trout)),shark);"#
+vert.tree<-read.tree(text=text.string)
+vert.tree<-read . tree(text=text.string)
+vert.tree<-read. tree(text=text.string)
+vert.tree<-read.tree (text=text.string)
+vert.tree<-read.tree(text=text.string)
+vert.tree<=read.tree(text=text.string)
+text.string<-#
+	"(((((((cow, pig) ,whale),(bat,(lemur, human))),(robin,iguana)),coelacanth#
+	),(gold_fish, trout)),shark);"#
+vert.tree<-read.tree(text=text.string)#
+#
+plot(vert.tree, edge.width=2)#
+#
+nodelabels(frame="circle", bg='white', cex=1)#
+#
+vert.tree
+vert.tree <- read.tree(text=text.string)
+# vert.tree <- read.tree(text = text.string)
+plot(vert.tree, edge.width=2)
+vert.tree <- read.tree(text = text.string)
+plot(vert.tree, edge.width=2)
+# plot(vert.tree, edge.width=2)
+text.string<-#
+	"(((((((cow, pig) ,whale),(bat,(lemur, human))),(robin,iguana)),coelacanth#
+	),(gold_fish, trout)),shark);"#
+#
+# vert.tree <- read.tree(text = text.string)#
+#
+# plot(vert.tree, edge.width=2)
+nodelabels(frame="circle", bg='white', cex=1)
+# nodelabels(frame="circle", bg='white', cex=1)
+vert.tree
+str(vert.tree)
+AnolisTree <- force.ultrametric(read.tree("https://jonsmitchell.com/data/anolis/tre"))
+AnolisTree <- force.ultrametric(read.tree("https://jonsmitchell.com/data/#
+	anolis/tre"))
+AnolisTree <- force.ultrametric(read.tree("https://jonsmitchell.com/data/anolis.tre"))
+AnolisTree <- force.ultrametric(read.tree("https://jonsmitchell.com/data/ anolis.tre"))
+AnolisTree <- force.ultrametric(read.tree("https://jonsmitchell.com/data/#
+	anolis/tre"))
+install.packages("ape")
+install.packages("phytool")
+install.packages("phytools")
+text.string<-#
+	"(((((((cow, pig) ,whale),(bat,(lemur, human))),(robin,iguana)),coelacanth#
+	),(gold_fish, trout)),shark);"
+vert.tree<-read.tree(text=text.string)
+text.string<-#
+	"(((((((cow, pig) ,whale),(bat,(lemur, human))),(robin,iguana)),coelacanth#
+	),(gold_fish, trout)),shark);"#
+vert.tree<-read.tree(text=text.string)
+vert.tree<=read.tree(text=text.string)
